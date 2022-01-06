@@ -400,7 +400,7 @@ class install(Command):
                             'dist_version': self.distribution.get_version(),
                             'dist_fullname': self.distribution.get_fullname(),
                             'py_version': py_version,
-                            'py_version_short': '%d.%d' % sys.version_info[:2],
+                            'py_version_short': get_config_vars()["VERSION"],
                             'py_version_nodot': '%d%d' % sys.version_info[:2],
                             'sys_prefix': prefix,
                             'prefix': prefix,
